@@ -89,3 +89,183 @@
 }
 
 /* Esercizio 10 */
+.ex-10-icon{
+    animation: rotation;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes rotation {
+    0%{
+        transform:rotate(0);
+    }
+    12.5%{
+        transform:rotate(-45deg)
+    }
+    25%{
+        transform:rotate(-90deg);
+    }
+    37.5%{
+        transform: rotate(-135deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    62.5%{
+        transform: rotate(-225deg);
+    }
+    75%{
+        transform:rotate(-270deg);
+    }
+    87.5%{
+        transform: rotate(-315deg);
+    }
+    100%{
+        transform:rotate(-360deg);
+    }
+}
+
+/* Esercizio 11 */
+.ex-11-icon{
+    transition: all 2s ease-in-out;
+}
+
+.ex-11-icon:hover{
+    animation: elastic;
+    animation-duration: 2s;
+}
+
+@keyframes elastic {
+    0%{
+        transform:rotate(0);
+    }
+    12.5%{
+        transform:rotate(45deg)
+    }
+    25%{
+        transform:rotate(90deg);
+    }
+    37.5%{
+        transform: rotate(135deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    62.5%{
+        transform: rotate(225deg);
+    }
+    75%{
+        transform:rotate(270deg);
+    }
+    87.5%{
+        transform: rotate(315deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+
+/* Esercizio 12 */
+
+.ex-12-button{
+    transition: all 2s ease-in-out;
+}
+.ex-12-button:hover .ex-12-top-white{
+    animation: backnforth;
+    animation-duration: 2s;
+}
+
+@keyframes backnforth {
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+    50%{
+        top:-10px;
+        left:60%
+    }
+    100%{
+        top: -10px;
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: forthnback;
+    animation-duration: 2s;
+}
+
+@keyframes forthnback {
+    0%{
+        bottom:-10px;
+        right:20%;
+    }
+    50%{
+        bottom:-10px;
+        right:60%;
+    }
+    100%{
+        bottom:-10px;
+        right:20%;
+    }
+}
+
+/* Esercizio 13 */
+.ex-13-button{
+    transition: all 5s ease-in-out;
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: backnforth-2;
+    animation-duration: 5s;
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: forthnback-2;
+    animation-duration: 5s;
+}
+
+@keyframes backnforth-2 {
+    0%{
+        top:-10px;
+        left:10%;
+    }
+    30%{
+        top:-10px;
+        left:calc(100%-30px);
+    }
+    45%{
+        left:calc(100%-30px);
+        top:100%;
+    }
+    75%{
+        top:100%;
+        left:-10%;
+    }
+
+    90%{
+        left:10%;
+        top:-10px;
+    }
+
+}
+@keyframes forthnback-2 {
+    0%{
+        bottom:-10px;
+        right: 20%;
+    }
+    30%{
+        bottom:-10px;
+        right:calc(100%-30px);
+    }
+    45%{
+        right:calc(100%-30px);
+        bottom:100%;
+    }
+    75%{
+        bottom:100%;
+        right:20%;
+    }
+    90%{
+        bottom:-10px;
+        right:20%;
+    }
+}
