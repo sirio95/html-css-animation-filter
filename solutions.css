@@ -53,3 +53,39 @@
     width:30px;
     margin: 35px 20px;
 }
+
+/* Esercizio 6 */
+.ex-6-img:hover{
+    filter:grayscale(100%)    
+}
+
+/* Esercizio 7 */
+.ex-7-img{
+    transition: all 1s ease-in-out;
+}
+.ex-7-img:hover{
+    filter: grayscale(100%) contrast(120%);
+}
+
+/* Esercizio 8 */
+.ex-8-img{
+    transition: all 1.5s ease-in-out;
+}
+
+.ex-8-img:hover{
+    border-radius: 25px;
+    filter: grayscale(75%) saturate(130%);
+}
+
+/* Esercizio 9 */
+.ex-9-img{
+    transition: all 1.5s ease-in-out;
+}
+
+.ex-9-img:hover{
+    border-radius: 25px;
+    filter: grayscale(75%) saturate(130%);
+    transform: scale(1.4);
+}
+
+/* Esercizio 10 */
